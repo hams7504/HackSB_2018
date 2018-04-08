@@ -41,24 +41,10 @@ function setup() {
       
      
   }
-  var counter2 = 0;
+  var counter2++
   button2.onMousePressed = function(){
       counter2++;
-      if(counter2 == 0)
-        whySad();
-      if(counter2 == 1)
-        goodGrades();
-      if(counter2 == 3)
-        seriesEnded();
-        
-      
-  }  
-  var counter3 = 0;
-  button2.onMousePressed = function(){
-      counter2++;
-      if(counter2 == 0)
-        whySad();
-      if(counter2 == 1)
+      whySad();
       vacation();
       seriesEnded();
       
@@ -79,11 +65,15 @@ function whyHappy(){
     draw();
 }
 function whySad(){
-    buttonQ.addImage("/Users/krinalmanakiwala/Desktop/LifeCoach Images/sad.png");//option 1
+    buttonQ.addImage("/Users/krinalmanakiwala/Desktop/LifeCoach Images/Why_Sad.png");//option 1
     button1.addImage("/Users/krinalmanakiwala/Desktop/LifeCoach Images/My friend betrayed me.png");//option 1
     button2.addImage("FAVORITE SERIES ENDED");//option 1
 }
-
+function whyMad(){
+    buttonQ.addImage("/Users/krinalmanakiwala/Desktop/LifeCoach Images/Why_mad.png");//option 1
+    button1.addImage("/Users/krinalmanakiwala/Desktop/LifeCoach Images/Siblings_tease.png");//option 1
+    button2.addImage("Fed_up");//option 1
+}
 
 function GoodGrades(){
     buttonQ.addImage("ANSWER"); // change it to answer
