@@ -29,10 +29,8 @@ function setup() {
       if (counter1 == 0)
         whyHappy();
       
-      else if (counter1 == 1) //vacation
-        ();
-      
-      whyHappy();
+      else if (counter1 == 1)
+        GoodGrades();
       
      
   }
