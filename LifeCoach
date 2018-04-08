@@ -47,7 +47,7 @@ function setup() {
       if(counter2 == 0)
         whySad();
       if(counter2 == 1)
-        vacation();
+        goodGrades();
       if(counter2 == 3)
         seriesEnded();
         
