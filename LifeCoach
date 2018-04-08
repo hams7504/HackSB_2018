@@ -41,10 +41,24 @@ function setup() {
       
      
   }
-  var counter2++
+  var counter2 = 0;
   button2.onMousePressed = function(){
       counter2++;
-      whySad();
+      if(counter2 == 0)
+        whySad();
+      if(counter2 == 1)
+        vacation();
+      if(counter2 == 3)
+        seriesEnded();
+        
+      
+  }  
+  var counter3 = 0;
+  button2.onMousePressed = function(){
+      counter2++;
+      if(counter2 == 0)
+        whySad();
+      if(counter2 == 1)
       vacation();
       seriesEnded();
       
