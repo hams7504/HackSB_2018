@@ -1,7 +1,6 @@
 var buttonQ;
 var button1;
 var button2;
-var button3;
 
 function setup() {
   createCanvas(800,400);
@@ -18,10 +17,6 @@ function setup() {
   
   button2 = createSprite(600, 100);  
   button2.addImage("SAD IMAGE"); 
-  var anim = asterisk.addAnimation("transform", "assets/asterisk_circle0001.png", "assets/asterisk_circle0008.png");
-  
-  button3 = createSprite(600, 100);  
-  button3.addImage("MAD IMAGE"); 
   var anim = asterisk.addAnimation("transform", "assets/asterisk_circle0001.png", "assets/asterisk_circle0008.png");
   
   //if defined, the collider will be used for mouse events
