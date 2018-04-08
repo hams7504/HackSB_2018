@@ -83,10 +83,10 @@ function friendBetrayed(){
     button2.addImage("/Users/krinalmanakiwala/Desktop/LifeCoach Images/No.png");
 }
 function no(){
-    buttonQ.addImage("/Users/krinalmanakiwala/Desktop/LifeCoach Images/No.png");
+    buttonQ.addImage("/Users/krinalmanakiwala/Desktop/LifeCoach Images/Find better friends.png");
 }
 function yes(){
-    buttonQ.addImage("/Users/krinalmanakiwala/Desktop/LifeCoach Images/Yes.png");
+    buttonQ.addImage("/Users/krinalmanakiwala/Desktop/LifeCoach Images/Then forgive your friend.png");
 }
 
 function  
