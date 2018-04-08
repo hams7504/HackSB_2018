@@ -1,6 +1,7 @@
 var buttonQ;
 var button1;
 var button2;
+var button3;
 
 function setup() {
   createCanvas(800,400);
@@ -19,7 +20,9 @@ function setup() {
   button2.addImage("SAD IMAGE"); 
   var anim = asterisk.addAnimation("transform", "assets/asterisk_circle0001.png", "assets/asterisk_circle0008.png");
   
-
+  button3 = createSprite(600, 100);  
+  button3.addImage("MAD IMAGE"); 
+  var anim = asterisk.addAnimation("transform", "assets/asterisk_circle0001.png", "assets/asterisk_circle0008.png");
   
   //if defined, the collider will be used for mouse events
   asterisk.setCollider("circle", 0,0,64);
@@ -38,15 +41,31 @@ function setup() {
       
      
   }
-  var counter2++
+  var counter2 = 0;
   button2.onMousePressed = function(){
       counter2++;
-      whySad();
+      if(counter2 == 0)
+        whySad();
+      if(counter2 == 1)
+        vacation();
+      if(counter2 == 3)
+        seriesEnded();
+        
+      
+  }  
+  var counter3 = 0;
+  button2.onMousePressed = function(){
+      counter2++;
+      if(counter2 == 0)
+        whySad();
+      if(counter2 == 1)
       vacation();
       seriesEnded();
       
   }  
-          
+    
+  button3.onMousePressed = function(){
+      
   }
   
   
@@ -56,22 +75,21 @@ function setup() {
 function whyHappy(){
     buttonQ.addImage("/Users/krinalmanakiwala/Desktop/LifeCoach Images/WhyHappy.png");//why are you happy?
     button1.addImage("/Users/krinalmanakiwala/Desktop/LifeCoach Images/GoodGrades.png"); // good grades
-    button2.addImage("/Users/krinalmanakiwala/Desktop/LifeCoach Images/Vacation.png"); //  
+    button2.addImage("/Users/krinalmanakiwala/Desktop/LifeCoach Images/Vacation.png"); //  vacation
     draw();
+}
+function GoodGrades(){
+    buttonQ.addImage("/Users/krinalmanakiwala/Desktop/LifeCoach Images/Work.png"); // change it to answer
+}
+function vacation(){
+    buttonQ.addImage("/Users/krinalmanakiwala/Desktop/LifeCoach Images/Pics.png");
 }
 function whySad(){
     buttonQ.addImage("/Users/krinalmanakiwala/Desktop/LifeCoach Images/sad.png");//option 1
     button1.addImage("/Users/krinalmanakiwala/Desktop/LifeCoach Images/My friend betrayed me.png");//option 1
-    button2.addImage("FAVORITE SERIES ENDED");//option 1
+    button2.addImage("/Users/krinalmanakiwala/Desktop/LifeCoach Images/My favbook.png");//option 1
 }
 
-
-function GoodGrades(){
-    buttonQ.addImage("ANSWER"); // change it to answer
-}
-function vacation(){
-    buttonQ.addImage("VACATION ANSWER");
-}
 function badgrades(){
     buttonQ.addImage("BG Question");
     button1.addImage("Didn't study");
